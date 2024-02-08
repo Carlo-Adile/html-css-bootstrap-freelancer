@@ -19,6 +19,10 @@ li{
     }
 }
 
+a{
+    text-decoration: none;
+}
+
 /* MAIN SECTION */
 #site_header{
     width:100%;
@@ -40,7 +44,6 @@ li{
 
 #site_main{
     width:100%;
-    min-height:200px;
 }
 
 main > .container-fluid:nth-child(odd){
@@ -49,6 +52,5 @@ main > .container-fluid:nth-child(odd){
 
 #site_footer{
     width:100%;
-    min-height:200px;
     background-color: var(--header);
 }
