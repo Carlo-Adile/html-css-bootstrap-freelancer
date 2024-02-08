@@ -1,1 +1,54 @@
+:root{
+    --background: #1abc9c;
+    --header:#2c3e50;
+}
 
+.debug{
+    border:1px solid black;
+    min-height:100px;
+}
+
+ul{
+    
+}
+
+li{
+    display: inline;
+    a{
+        text-decoration: none;
+    }
+}
+
+/* MAIN SECTION */
+#site_header{
+    width:100%;
+   /*  min-height:200px; */
+    background-color: var(--header);
+    color:white;
+
+    li{
+        a{
+            color:White;
+        }
+    }
+}
+
+/* navigate */
+#navigate{
+    height:100px;
+}
+
+#site_main{
+    width:100%;
+    min-height:200px;
+}
+
+main > .container-fluid:nth-child(odd){
+    background-color: var(--background);
+}
+
+#site_footer{
+    width:100%;
+    min-height:200px;
+    background-color: var(--header);
+}
