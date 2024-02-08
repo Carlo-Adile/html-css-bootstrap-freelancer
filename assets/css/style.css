@@ -9,27 +9,38 @@
     min-height:100px;
 }
 
-/* MAIN SECTION */
+/***********************************************
+site header
+************************************************/
 #site_header{
     width:100%;
    /*  min-height:200px; */
     background-color: var(--header);
     color:white;
-
-    li{
-        display: inline;
-        a{
-            text-decoration: none;
-            color:White;
-        }
-    }
 }
 
 /* navigate */
 #navigate{
     height:100px;
+    ul{
+        display: none;
+    }
+    p{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    i{
+        font-size:1.5rem;
+        font-weight: light;
+        padding:0.4rem 0.8rem 0.4rem 0.8rem;
+        border:1px solid white;
+        border-radius:0.2rem;
+    }
 }
 
+/***********************************************
+site main
+************************************************/
 #site_main{
     width:100%;
 }
@@ -42,8 +53,53 @@ main > .container-fluid:nth-child(5){
     background-color: var(--alternative);
 }
 
+/***********************************************
+site footer
+************************************************/
 #site_footer{
     width:100%;
     background-color: var(--header);
     color:White;
+}
+
+
+/***********************************************
+media queries
+************************************************/
+/* @include media-breakpoint-up(md) {
+    #nav_links{
+        display
+    }
+}
+
+@include media-breakpoint-only(lg) { ... } */
+
+
+/* @include media-breakpoint-up(md) {
+  #nav_links {
+    display: block;
+  }
+} */
+
+@media screen and (min-width: 768px) {
+    #navigate{
+        p{
+            font-size:2rem;
+        }
+        ul{
+            display: flex;
+            gap:1rem;
+            li{
+                display: inline;
+                a{
+                    text-decoration: none;
+                    color:White;
+                    font-weight: bold;
+                }
+            }
+            }
+        i{
+            display: none;
+        }
+    }
 }
