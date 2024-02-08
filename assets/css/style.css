@@ -1,26 +1,12 @@
 :root{
     --background: #1abc9c;
     --header:#2c3e50;
+    --alternative: #3a546d;
 }
 
 .debug{
     border:1px solid black;
     min-height:100px;
-}
-
-ul{
-    
-}
-
-li{
-    display: inline;
-    a{
-        text-decoration: none;
-    }
-}
-
-a{
-    text-decoration: none;
 }
 
 /* MAIN SECTION */
@@ -31,7 +17,9 @@ a{
     color:white;
 
     li{
+        display: inline;
         a{
+            text-decoration: none;
             color:White;
         }
     }
@@ -50,7 +38,12 @@ main > .container-fluid:nth-child(odd){
     background-color: var(--background);
 }
 
+main > .container-fluid:nth-child(5){
+    background-color: var(--alternative);
+}
+
 #site_footer{
     width:100%;
     background-color: var(--header);
+    color:White;
 }
