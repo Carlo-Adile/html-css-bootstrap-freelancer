@@ -1,7 +1,7 @@
-.debug{
+/* .debug{
     border:1px solid black;
     min-height:100px;
-}
+} */
 
 :root{
     --primary: #1abc9c;
@@ -13,7 +13,25 @@
     background-color: var(--darkest);
 }
 
+/* jumbotron section */
+.avatar_img{
+    width:250px;
+    height:250px;
+}
 
+.star_object::before, .star_object::after{
+    content:'';
+    height:3px;
+    width:12%;
+    display: block;
+    background-color: currentColor;
+    border-radius:3px;
+}
+
+
+
+
+/* fix from here */
 /***********************************************
 site main
 ************************************************/
@@ -21,7 +39,7 @@ site main
     width:100%;
 }
 
-main > .container-fluid:nth-child(odd){
+section:nth-child(odd){
     background-color: var(--primary);
 }
 
