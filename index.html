@@ -10,31 +10,28 @@
     <title>Bootstrap Freelancer</title>
 </head>
 <body>
-    <header id="site_header" class="debug">
-      <div class="container-fluid">
-        <div id="navigate" class="row justify-content-between align-items-center">
-          <div class="col-auto">
-            <p>
-              START BOOTSTRAP
-            </p>
-          </div>
-          <div class="col-auto">
-            <ul id="nav_links">
-              <li><a href="">
-                PORTFOLIO
-              </a></li>
-              <li><a href="">
-                ABOUT
-              </a></li>
-              <li><a href="">
-                CONTACT
-              </a></li>
-            </ul>
-            <i class="fa-solid fa-bars"></i>
+  <!-- site header -->
+  <header id="site_header">
+    <nav class="navbar navbar-expand-sm bg_darkest p-3">
+      <div class="container">
+        <!-- brand -->
+        <a class="navbar-brand text-white fw-bold text-uppercase" href="#">Start Bootstrap</a>
+        <!-- collapsed icon -->
+        <button class="navbar-toggler border-light-subtle" type="button" data-toggle="collapse" data-target="#navbarID"
+        aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars text-white-50"></i>
+        </button>
+        <!-- expanded menu -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarID">
+          <div class="navbar-nav">
+            <a class="nav-link active text-white" aria-current="page" href="#">PORTFOLIO</a>
+            <a class="nav-link active text-white" aria-current="page" href="#">ABOUT</a>
+            <a class="nav-link active text-white" aria-current="page" href="#">CONTACT</a>
           </div>
         </div>
       </div>
-    </header>
+    </nav>
+  </header>
 
     <main id="site_main" class="debug">
       <!-- Start Bootstrap -->
