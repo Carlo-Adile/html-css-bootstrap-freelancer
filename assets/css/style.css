@@ -17,6 +17,18 @@
     background-color: var(--primary);
 }
 
+.text_primary{
+    color:var(--primary);
+}
+
+/* main section background color */
+section:nth-child(odd){
+    background-color: var(--primary);
+}
+
+section:nth-child(5){
+    background-color: var(--dark);
+}
 
 /* jumbotron section */
 .avatar_img{
@@ -24,7 +36,7 @@
     height:300px;
 }
 
-.star_object::before, .star_object::after{
+.ms_star::before, .ms_star::after{
     content:'';
     height:3px;
     width:12%;
@@ -33,33 +45,12 @@
     margin:0 1rem 0 1rem;
 }
 
-
-/* fix from here */
-/***********************************************
-site main
-************************************************/
-#site_main{
-    width:100%;
-}
-
-section:nth-child(odd){
-    background-color: var(--primary);
-}
-
-main > .container-fluid:nth-child(5){
-    background-color: var(--dark);
-}
-
-/***********************************************
-site footer
-************************************************/
-#site_footer{
-    width:100%;
-    background-color: var(--darkest);
-    color:White;
+.ms_social{
+    width:3rem;
+    height:1.5rem;
 }
 
 
-/***********************************************
-media queries
-************************************************/
+
+
+
